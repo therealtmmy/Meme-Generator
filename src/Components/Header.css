@@ -5,6 +5,8 @@
     height: 65px;
     padding-left: 24.47px;
     display: flex;
+    justify-content: start;
+    align-items: center;
     gap: 10px;
     margin-bottom: 36px;
 }
