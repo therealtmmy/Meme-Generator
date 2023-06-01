@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.Hero-Head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Hero-Input {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    width: 230px;
+    height: 35px;
+    outline: none;
+    border: 1px solid #D5D4D8;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+button {
+    border-radius: 5px;
+    width: 509px;
+    height: 40px;
+    background-color: #A818DA;
+    font-family: 'Karla' sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  border: none;
+  color: white;
+}
+
+.Meme-Image {
+    width: 508px;
+    height: 350px;
+    object-fit: cover;
+}
