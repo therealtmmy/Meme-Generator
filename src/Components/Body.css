@@ -21,6 +21,8 @@ input {
     border: 1px solid #D5D4D8;
     padding-left: 10px;
     border-radius: 5px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
 }
 
 button {
@@ -28,13 +30,14 @@ button {
     width: 509px;
     height: 40px;
     background-color: #A818DA;
-    font-family: 'Karla' sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 700;
     font-size: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
   border: none;
   color: white;
+  cursor: pointer;
 }
 
 .Meme-Image {

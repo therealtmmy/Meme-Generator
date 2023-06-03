@@ -9,7 +9,7 @@ const Hero = () => {
         <input type="text" />
       </div>
       <button>Get a new meme image</button>
-      <img className="Meme-Image" src={Image} />
+      <img className="Meme-Image" src={Image} alt=""/>
   </div>;
 };
 
