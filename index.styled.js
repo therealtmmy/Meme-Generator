@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 
-export const MainBody = styled.body`
+export const Source = styled.html`
   margin: 0;
   padding: 0;
 `;
