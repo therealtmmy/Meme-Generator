@@ -1,15 +1,14 @@
 import React from "react";
 import { MainBody, HeroInput, Input, Button, MemesImage } from "./Styled Components/Body.styled.js";
-import Image from "./memeimg.png"
 import memesData from "./memesData.js"
 
 let url
 const Hero = () => {
+  const [memes, setMemes] = React.useState("")
 const getMemeImage = () => {
 const memesArray = memesData.data.memes
 const randomNumber = Math.floor(Math.random() * memesArray.length)
-url = memesArray[randomNumber].url
-}
+setMemes(memesArray[randomNumber].url)}
 
 return (
   <>
@@ -21,7 +20,7 @@ return (
         <Button
         onClick={getMemeImage}
         >Get a new meme image</Button>
-        <MemesImage className="Meme-Image" src={Image} alt=""/>
+        <MemesImage className="Meme-Image" src={memes} alt=""/>
     </MainBody>
   </>
   )
