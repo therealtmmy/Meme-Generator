@@ -43,5 +43,5 @@ export const Button = styled.button`
 export const MemesImage = styled.img`
   width: 508px;
   height: 350px;
-  object-fit: cover;
+  object-fit: contain;
 `;

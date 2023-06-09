@@ -20,7 +20,7 @@ return (
         <Button
         onClick={getMemeImage}
         >Get a new meme image</Button>
-        <MemesImage className="Meme-Image" src={memes} alt=""/>
+        <MemesImage src={memes} alt=""/>
     </MainBody>
   </>
   )
