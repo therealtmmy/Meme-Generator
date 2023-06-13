@@ -2,13 +2,24 @@ import React from "react";
 import { MainBody, HeroInput, Input, Button, MemesImage } from "./Styled Components/Body.styled.js";
 import memesData from "./memesData.js"
 
-let url
 const Hero = () => {
-  const [memes, setMemes] = React.useState("")
+const [meme, setMeme ]= React.useState(
+  {
+    topText: "",
+    bottomText: "",
+    randomImage: "https://i.imgflip.com/1bhm.jpg"
+  }
+)
+ 
+const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 const getMemeImage = () => {
-const memesArray = memesData.data.memes
+const memesArray = allMemeImages.data.memes
 const randomNumber = Math.floor(Math.random() * memesArray.length)
-setMemes(memesArray[randomNumber].url)}
+const url = memesArray[randomNumber].url
+setMeme(prevMeme => ({
+    ...prevMeme,
+    randomImage: url
+}))
 
 return (
   <>
@@ -20,10 +31,10 @@ return (
         <Button
         onClick={getMemeImage}
         >Get a new meme image</Button>
-        <MemesImage src={memes} alt=""/>
+        <MemesImage src={meme.randomImage} alt=""/>
     </MainBody>
   </>
-  )
+  )}
 };
 
 export default Hero;
