@@ -1,6 +1,4 @@
 import { styled } from "styled-components";
-// @import url('https://fonts.googleapis.com/css2?family=Karla:wght@700&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 export const MainBody = styled.div`
   display: flex;
@@ -44,4 +42,26 @@ export const MemesImage = styled.img`
   width: 508px;
   height: 350px;
   object-fit: contain;
+`;
+
+export const FirstText = styled.h2`
+  text-transform: uppercase;
+  color: black;
+  width: 8em;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: -8em;
+  font-family: Impact, sans-serif;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
+    1px 1px 0 white;
+`;
+
+export const SecondText = styled.h2`
+  text-transform: uppercase;
+  color: black;
+  width: 8em;
+  font-size: 2.5em;
+  text-align: center;
+  font-family: Impact, sans-serif;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
 `;
