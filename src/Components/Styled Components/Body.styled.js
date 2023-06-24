@@ -50,7 +50,7 @@ export const FirstText = styled.h2`
   width: 8em;
   font-size: 2.5em;
   text-align: center;
-  margin-top: -8em;
+  margin-top: -9.7em;
   font-family: Impact, sans-serif;
   text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
     1px 1px 0 white;
@@ -60,7 +60,8 @@ export const SecondText = styled.h2`
   text-transform: uppercase;
   color: black;
   width: 8em;
-  font-size: 2.5em;
+  margin-top: 5em;
+  font-size: 2.9em;
   text-align: center;
   font-family: Impact, sans-serif;
   text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;

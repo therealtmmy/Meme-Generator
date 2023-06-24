@@ -3,7 +3,7 @@ import { MainBody, HeroInput, Input, Button, MemesImage, FirstText, SecondText }
 import memesData from "./memesData.js"
 
 const Hero = () => {
-const [meme, setMeme ]= React.useState(
+const [meme, setMeme ] = React.useState(
   {
     topText: "",
     bottomText: "",
