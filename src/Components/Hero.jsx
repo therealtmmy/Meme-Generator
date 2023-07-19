@@ -1,6 +1,5 @@
 import React from "react";
 import { MainBody, HeroInput, Input, Button, MemesImage, FirstText, SecondText } from "./Styled Components/Body.styled.js";
-import memesData from "./memesData.js"
 
 const Hero = () => {
 const [meme, setMeme ] = React.useState(
@@ -10,13 +9,26 @@ const [meme, setMeme ] = React.useState(
     randomImage: "https://i.imgflip.com/1bhm.jpg"
   }
 )
- 
-const [allMemeImages, setAllMemeImages] = React.useState(memesData)
 
+const [allMeme, setAllMeme] = React.useState([])
+
+React.useEffect(() => {
+  // fetch("https://api.imgflip.com/get_memes")
+  // .then(res => res.json())
+  // .then(data => setAllMeme(data.data.memes))
+
+  async function getMeme() {
+    const res = await fetch("https://api.imgflip.com/get_memes")
+    const data = await res.json()
+    setAllMeme(data.data.memes)
+  }
+  
+  getMeme()
+}, [])
+ 
 const getMemeImage = () => {
-const memesArray = allMemeImages.data.memes
-const randomNumber = Math.floor(Math.random() * memesArray.length)
-const url = memesArray[randomNumber].url
+const randomNumber = Math.floor(Math.random() * allMeme.length)
+const url = allMeme[randomNumber].url
 setMeme(prevMeme => ({
     ...prevMeme,
     randomImage: url
